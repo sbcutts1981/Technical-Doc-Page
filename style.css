@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Stylish');
+
+html {
+	background: #000;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+main {
+  position: relative;
+  left: 300px;
+  width: 75%;
+}
+
+.GMLD {
+  color: white;
+  font-size: 15px;
+}
+
+#navbar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-buttons:hover {
+	color: #000;
+	background: #green;
+	transition: 0.6s;
+}
+
+#gs {
+	border-bottom: 1px solid #fff;
+}
+
+#scr {
+	border-bottom: 1px solid #fff;
+}
+
+#bcs {
+	border-bottom: 1px solid #fff;
+}
+
+#db {
+	border-bottom: 1px solid #fff;
+}
+
+.sidenav img {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	height: 250px;
+	
+}
+
+.hdr {
+  display: flex;
+  justify-content: center;
+  font-family: 'Stylish', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+h2 {
+  background: green;
+  border-radius: 15px;
+}
+
+h3 {
+  background: green;
+  border-radius: 15px;
+}
+
+p {
+  color: white;
+  font-family: 'Stylish', sans-serif;
+  
+}
+
+ul {
+  color: white;
+}
+
+li {
+  color: yellow;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}body {
+  font-family: 'Abel', sans-serif;
+}
+
+.sidenav {
+  	height: 100%;
+  	width: 250px;
+  	position: fixed;
+  	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	border-right: 1.5px solid green;
+	
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #EAEAEA;
+	display: block;
+	transition: 0.3s;
+	text-align: center;
+  
+	
+}
+
+.side-buttons {
+	transition: 0.6s;
+}
+
+#intro {
+	border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#gs {
+	border-bottom: 1px solid #fff;
+}
+
+#scr {
+	border-bottom: 1px solid #fff;
+}
+
+#bcs {
+	border-bottom: 1px solid #fff;
+}
+
+#db {
+	border-bottom: 1px solid #fff;
+}
+
+.side-buttons:hover {
+	color: #000;
+	background: green;
+}
+
+code {
+  display: block;
+  text-align: left;
+  background: grey;
+  color: white;
+  height: auto;
+  width: 50%;
+}
+
+

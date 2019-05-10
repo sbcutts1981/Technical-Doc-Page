@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fel-n-Soft</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<nav id="navbar">
+    <header id="nav" class="sidenav">
+      <h2 class="GMLD"> GameMaker Studio Documentation </h2>
+        <a id="intro" class="side-buttons nav-link"  href="#Introduction" onclick="closeNav()">Introduction</a>
+        <a id="gs" class="side-buttons nav-link" href="#Getting_Started" onclick="closeNav()">Getting Started</a>
+      <a id="scr" class="side-buttons nav-link" href="#Scripting" onclick="closeNav()">Scripting</a>	
+      <a id="bcs" class="side-buttons nav-link"  href="#Basic_Code_Structure" onclick="closeNav()">Basic Code Structure</a>
+      <a id="db" class="side-buttons nav-link" href="#Debugging" onclick="closeNav()">Debugging</a>
+    </header>
+	</nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="hdr"><h2>Introduction</h2></header>
+        <p>Welcome to the GameMaker Studio 2 user manual! This document is divided into three parts with the aim of getting you introduced to the interface and basic workings of GameMaker Studio 2 before going on to more advanced usage and the functions available through our propriety scripting language GML or our visual scripting tool Drag and Drop. To ease you into things we have created a handy Quick Start Guide, and even if you are familiar with other game creation tools we recommend that you start there to get an overview of the way that GameMaker Studio 2 works. You'll find GameMaker Studio 2 to be easy and intuitive to use and that, whatever your skill level, you will soon be making those games you've always dreamed of.</p>
+    <p style="color:yellow;font-size:14px;"><em>NOTE: Due to the modular nature of GameMaker Studio 2 there are certain things that are not included in this user manual, particularly those aspects of setting up and connecting the different devices that can be supported. For up-to-date information and troubleshooting hints and tips related to the different target platforms, please see the <a href="https://help.yoyogames.com/hc/en-us/signin?return_to=https%3A%2F%2Fhelp.yoyogames.com%2Fhc%2Fen-us%2Fcategories%2F202590268">YoYo Games Help Center</a>.</em></p>
+      </section>
+    
+      <section class="main-section" id="Getting_Started">
+        <header class="hdr"><h2>Getting Started</h2></header>
+        <p>This section is the obligatory first stop for using GameMaker Studio 2 and getting to grips with how things work. You'll find that GameMaker Studio 2 is intuitive and simple to use, and even if you've never used any tools like this before you shouldn't have any problems getting started and making games after reading through this section. Once you've got to grips with the basics you can then move on to the more in-depth look at the components of GameMaker Studio 2 in the Interface section below.</p>
+        <h3 class="hdr">Interface</h3>
+        <p>The GameMaker Studio 2 IDE (integrated development environment) has a number of advanced options that are of great importance if you wish to get the most out of the product. These options include source control integration, project configurations, advanced debugging and a number of extra tools for changing and manipulating the game assets.</p>
+         <h3 class="hdr">The Sprite Editor</h3>
+        <p>The sprite editor is where you set the general properties for any sprite resource that you make. You can open this window by creating a new sprite (right-click on the sprite resource folder and select "Create"), by double-clicking on an existing sprite or by right-clicking an existing sprite and selecting "Properties". The parts that make up the Sprite Editor are as follows:</p>
+         <h3 class="hdr">The Image Editor</h3>
+        <p>The image editor is where you can create your own sprites or edit those you have imported or created previously. If you have used any image tools previously then this should be familiar to you but there are a few things to note when using the GameMaker Studio 2 image editor which may not be immediately apparent:</p> 
+        <ul>
+          <li> When you create multiple frames, you can draw to them as they animate! So, if you press the play button on the Frame Control bar, and then select a brush and start to draw in the editor window, you'll see that the frames will animate in the editor and what you draw will be added to the corresponding frame in that moment. You can experiment with different frame rates until you get something you like, but once you've got the hang of how this works you'll be creating dynamic sprites and effects in no time. </li>
+          <li>You can pull the Image Editor tab off of the main workspace window into it's own window. This can be handy when using multiple monitors, for example.</li>
+          <li>When you use the copy functions to, for example, copy a selection of an image, then the selection copied gets added to your brush list. This means that you can select a part of an image and then use it in the rest of the paint tools to draw lines, polygons or just paint freely. The brush can be scaled and blended with a colour too. Note that the Paste functionality is not intended for use internally within the editor as anything you copy is added to the brush list and so can be selected for "pasting" that way. Instead paste is simply for you to capture something from an external program and paste it into the Image Editor.</li>
+          <li>You can have multiple layers for each sprite thanks to the handy layer editor. These layers can ordered and even placed in folders to make creating more complex images easier.</li>
+      </ul>
+        <p>Those are just some of the more advanced features that the image editor offers. To find out the full feature range, please read the items below detailing the functions of every part of the editor: </p>
+        
+      </section>
+    
+    <section class="main-section" id="Scripting">
+        <header class="hdr"><h2>Scripting</h2></header>
+      <h3 class="hdr">Drag & Drop</h3>
+        <p>Drag and Drop (DnD™) is ideal for beginners or those that are more visually or artistically orientated (this is sometimes called a "visual scripting language"). It consists of dragging and dropping actions into the Object Editor to create a list of functions that instances of the object will follow. You can find out how to use DnD™ from the following sections of the manual:</p>
+      <ul>
+        <li><a href="https://docs2.yoyogames.com/source/_build/3_scripting/1_drag_and_drop_overview/index.html">Drag And Drop Overview</a></li> 
+        <li><a href="https://docs2.yoyogames.com/source/_build/3_scripting/2_drag_and_drop_reference/index.html">Drag And Drop Reference</a> </li> 
+      </ul>
+      <h3 class="hdr">GameMaker Language (GML)</h3>
+        <p>This section of the manual contains all the information required to understand and use the GameMaker Studio 2 scripting language GML. The code in this language can be used to create your games and is added into objects from the Object Editor, normally when you've chosen to make a new GameMaker Language Project, although it can also be used along with DnD™ (Drag and Drop).</p>
+      <p>Each event has its own tab in the editor and you can add, edit, or remove code from them at any time (for more information on events see Object Events). The code itself must have a basic structure and can contain resource indices, variables, functions, expressions, keywords... etc... all of which are explained in the sections below. If you are a novice to programming or making the switch from DnD™, it is recommended that you start with the page on Basic Code Structure and then read through them all, testing code from each of the sections within GameMaker Studio 2 itself. </p>
+    </section>
+     <section class="main-section" id="Basic_Code_Structure">
+        <header class="hdr"><h2>Basic Code Structure</h2></header>
+        <p>A code block consists of a set of instructions, called statements, that are then interpreted by GameMaker Studio 2 and used to make something happen within your game. That "something" can be as simple as adding 2 and 2 to get 4, or as complex as making an enemy run away when their health gets below a certain value. The actual structure of the program can vary greatly, depending on the functions it uses, but broken down to basics it just looks like this:</p>
+       <code>
+         health = 100; <br/>
+         score = 0; <br/> 
+        </code>
+       <h3 class="hdr">Comments in Code</h3>
+               <p>When working in collaboration with other people, when dealing with a large project, or even just for your own reference and debugging, leaving comments in your codes and scripts is very important. In GameMaker Studio 2 you have various mechanisms to help you leave notes and comments about code sections and even whole blocks of code that can be seen in the event list of the object that you are currently editing, and in this way you can leave notes to yourself and to your colleagues, or to explain a particularly tricky piece of code, or even just leave a reminder about what something does.</p>
+       <p>The first thing you can do is leave a short comment using // before the text. For example: </p>
+       <code>
+         //health = 100; <br/>
+         //score = 0; <br/> 
+        </code>
+       <p>You may also leave multi-line comments, to give credit, to omit a complete section of code for debugging, or even to explain the arguments of a script. For that you can use /* ... */ like this:</p>
+       <code>
+         /*health = 100; <br/>
+         score = 0; */ <br/> 
+        </code>
+       <h3 class="hdr">Assignments</h3>
+       <p>An assignment simply stores a value in a variable and has the form: </p>
+       <code>
+         variable = expression; <br/>
+        </code>
+       <p>An expression can be a simple value but can also be more complicated, so, rather than assigning a value to a variable, one can also add a value to the current value of the variable using +=, for example:</p>
+         <code>
+          a = 100;   // Assigning a simple value <br />
+          b = 200;  <br />
+          c = 300;  <br />
+          a += b;    // Assigning with operation <br />
+          a = b + c; // Assigning with expression <br />
+         </code> 
+    </section>
+    <section class="main-section" id="Debugging">
+      <header class="hdr"><h2>Debugging</h2></header>
+      <p>The Debugger is a powerful tool for checking your game, and is especially useful for tracking down errors and bugs in your code, as well as checking that scripts are run when they should be, and that variables and arrays contain the values you expect etc... You can start the Debugger by running your game from GameMaker Studio 2 IDE using the Debug button at the top of the IDE, or by going to the Build menu and selecting "Debug".</p>
+    </section>
+  </main>
+
+  </body>
+</html> 
